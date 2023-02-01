@@ -1,11 +1,21 @@
+# 재귀함수
+# 팩토리얼
 def factorial(n):
-    if n == 0 or n == 1:
+    if n == 1:
         return 1
     else:
-        return n * factorial(n-1)
-print(factorial(4)) # 24
+        return factorial(n - 1) * n
 
+print(factorial(3))
 
-# 재귀 만들 때 나를 호출했다면 return을 넣어서 꼭 반환
+# 반복문
+# 팩토리얼
 
+def fact(n):
+    result = 1
+    while n > 1:
+        result *= n
+        n -= 1
+    return result
 
+print(fact(5))
