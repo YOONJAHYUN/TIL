@@ -34,9 +34,6 @@ def deq():
 
     return tmp
 
-
-
-
 heap = [0] * 101    # 완전이진트리 1번 100번 인덱스 준비
 last = 0            # 완전이진트리의 마지막 정점 번호
 enq(5)
@@ -45,6 +42,7 @@ enq(15)
 print(heap[1])
 enq(8)
 print(heap[1])
+print(enq(1))
 enq(20)
 print(heap[1])
 
