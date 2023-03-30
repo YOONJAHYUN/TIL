@@ -1,5 +1,6 @@
 import sys
 sys.setrecursionlimit(10**6)
+
 def msort(s, e):
 
     if s == e:
@@ -17,24 +18,31 @@ def msort(s, e):
             if arr[l] <= arr[r]:
                 tmp[k] = arr[l]
                 l += 1
+
             else:
                 tmp[k] = arr[r]
                 r += 1
+
             k += 1
+
         elif l <= m:
             while l <= m:
                 tmp[k] = arr[l]
                 l += 1
                 k += 1
+
         elif r <= e:
             while r <= e:
                 tmp[k] = arr[r]
                 r += 1
                 k += 1
+
     i = 0
+
     while i < k:
         arr[s+i] = tmp[i]
         i += 1
+
     return
 
 
